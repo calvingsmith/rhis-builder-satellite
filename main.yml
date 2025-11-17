@@ -35,14 +35,14 @@
       tags:
         - tags_init
 
-    - name: "Load the vault variables"
+    - name: "Load the vault variable directory"
       when: vault_dir is defined
       ansible.builtin.include_vars:
         dir: "{{ vault_dir }}"
       tags:
         - tags_init
 
-    - name: "Load the other variables"
+    - name: "Load the other variable from the variable directory"
       when: vars_dir is defined
       ansible.builtin.include_vars:
         dir: "{{ vars_dir }}"
@@ -85,7 +85,7 @@
         - tags_manifest
         - tags_pre_sync
 
-    - name: "Ensure Satellite manifest configuration"
+    - name: "Ensure Satellite subscription manifest configuration"
       ansible.builtin.import_role:
         name: subscription_manifests
       tags:
@@ -93,7 +93,7 @@
         - tags_manifest
         - tags_pre_sync
 
-    - name: "Ensure Satellite manifest configuration"
+    - name: "Ensure Satellite Idm configuration"
       when:
         - satellite_pre_use_idm
         - rex_kerberos_enabled

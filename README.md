@@ -13,7 +13,7 @@ See rhis-builder-vault-SAMPLE repo for secrets definitions.
 
 Hey, welcome to the next repo on your way to building the RHIS.
 
-The code in this repo builds the Satellite configuration for an RHIS deployment. Currently, this deployment assumes the Red Hat Infrastructure Standard Adoption Model is being followed. You can now deploy with or without Red Hat Identity Management integration. If you are following the RH-ISAM and **want** to have an Identity Management instance for your environment, please see the **[rhis-builder-idm](https://github.com/parmstro/rhis-builder-repo)** repo and build it before you deploy Satellite. 
+The code in this repo builds the Satellite configuration for an RHIS deployment. Currently, this deployment assumes the Red Hat Infrastructure Standard Adoption Model is being followed. You can now deploy with or without Red Hat Identity Management integration. If you are following the RH-ISAM and **want** to have an Identity Management instance for your environment, please see the **[rhis-builder-idm](https://github.com/parmstro/rhis-builder-idm)** repo and build it before you deploy Satellite. 
 
 If you do not want to deploy your Satellite integrated with an Identity Management instance, you must ensure that you provide for the related services for authentication, dns, certificates, etc.. within your configuration. You will need to set the satellite_pre_use_idm to false in your satellite_pre.yml variable file
 e.g.
