@@ -82,7 +82,7 @@ settings_authentication:
   #   full_name: "OIDC JWKs URL"
   #   value: ""
   #   settings_type: "string"
-  #   description: "OpenID Connect JSON Web Key Set(JWKS) URL. Typically https://keycloak.example.com/auth/realms/<realm name>/protocol/openid-connect/certs when using Keycloak as an OpenID provider"
+  #   description: "OpenID Connect JSON Web Key Set(JWKS) URL. Typically https://keycloak.demo.net/auth/realms/<realm name>/protocol/openid-connect/certs when using Keycloak as an OpenID provider"
 
   # - name: "oidc_audience"
   #   full_name: "OIDC Audience"

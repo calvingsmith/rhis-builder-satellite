@@ -41,7 +41,7 @@ settings_template_sync:
 
   - name: "template_sync_repo"
     full_name: "Repo"
-    description: "Target path to import/export. Different protocols can be used, for example /tmp/dir, git://example.com, https://example.com, ssh://example.com. When exporting to /tmp, note that production deployments may be configured to use private tmp."
+    description: "Target path to import/export. Different protocols can be used, for example /tmp/dir, git://demo.net, https://demo.net, ssh://demo.net. When exporting to /tmp, note that production deployments may be configured to use private tmp."
     settings_type: "string"
     default: ""
     value: "https://github.com/theforeman/community-templates.git"

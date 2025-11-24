@@ -12,7 +12,7 @@ global_parameters:
     parameter_type: "string"
 
   - name: "ansible_controller_api_url"
-    value: "https://aapcontroller24.example.ca/api/v2"
+    value: "https://aapcontroller24.demo.net/api/v2"
     parameter_type: "string"
     hidden_value: false
     state: "present"

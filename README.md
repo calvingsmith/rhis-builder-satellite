@@ -37,9 +37,9 @@ It is probably best for your first run, to make as few changes to the sample con
 
 ### What's new
 * rhis-builder-satellite now configures user roles, groups and users. This supports external users and groups from IdM
-* we got rid of the distinction between *_rhisam and *_user variable sets. Only one set now and all the examples are under satellite.example.ca  
+* we got rid of the distinction between *_rhisam and *_user variable sets. Only one set now and all the examples are under satellite.demo.net  
 
-The rhisam configuration defaults are included in the hostvars directory for satellite.example.ca
+The rhisam configuration defaults are included in the hostvars directory for satellite.demo.net
 We have set this up so that you can keep the rhisam configurations and add your own configuration through *config_name*_user, see below.
 
 ### Deploying an RHIS Satellite environment.
@@ -49,7 +49,7 @@ As of this build, we do not deploy Capsule Servers. Coming Soon! TM
 Basic Steps:
 1. Set sat_primary in the inventory to the FQDN of a @Base RHEL 8 build system (virtual, physical or prepared cloud image (non-RHUI)).
 2. Create a directory with for the FQDN of the sat_primary server under the host_vars directory. (e.g. rhis-builder-satellite/host_vars/rhissat.mydomain.com)
-3. Copy the contents of the satellite.example.ca directory into your directory created in the previous step.
+3. Copy the contents of the satellite.demo.net directory into your directory created in the previous step.
 4. Update the inventory file and set [sat_primary] to the FQDN of your system that will become the satellite.
 5. Update the variables to suit your configuration. For details on all the varibles see variable_notes.md
 6. Configure your secrets. For details on secrets see rhis-builder-vault_SAMPLE.yml

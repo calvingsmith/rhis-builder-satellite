@@ -36,14 +36,14 @@ compute_resources:
     organizations: "{{ satellite_organization }}"
     provider_params:
       caching_enabled: false  # setting this to true currently causes some server faults.
-      datacenter: "example.ca"
+      datacenter: "demo.net"
       url: "192.168.140.30"
       user: "{{ vcenter_service_username }}"
       password: "{{ vcenter_service_password }}"
 
   - name: "Azure_Lab"
     provider: "AzureRm"
-    description: "Example.ca Resource Group"
+    description: "DEMO.NET Resource Group"
     locations: "{{ satellite_location }}"
     organizations: "{{ satellite_organization }}"
     images:

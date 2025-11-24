@@ -3,13 +3,13 @@
 use_completion_logic: true
 
 
-satellite_fqdn: satellite.example.ca
+satellite_fqdn: satellite.demo.net
 satellite_username: "{{ satellite_username_vault }}"
 satellite_password: "{{ satellite_password_vault }}"
-satellite_admin_email: "admin@example.ca"
+satellite_admin_email: "admin@demo.net"
 satellite_initial_location: "Default Location"
 satellite_initial_organization: "Default Organization"
-satellite_domain: "example.ca"
+satellite_domain: "demo.net"
 satellite_url: "https://{{ satellite_fqdn }}/"
 satellite_virtwho_username: "{{ satellite_virtwho_username_vault }}"
 satellite_virtwho_password: "{{ satellite_virtwho_password_vault }}"

@@ -3,7 +3,7 @@
 # yamllint disable rule:line-length
 
 vmware_cluster1_name: "chassis3"
-vmware_cluster1_path: "/Datacenters/example.ca/vm"
+vmware_cluster1_path: "/Datacenters/demo.net/vm"
 vmware_cluster1_datastore: "NASAEX_VMS"
 vmware_cluster1_network: "VM Network"
 

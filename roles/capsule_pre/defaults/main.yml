@@ -2,7 +2,7 @@
 # Supply default variables for satellite_pre role
 
 capsule_pre_min_var_storage_gb: 200
-capsule_pre_sat_fqdn: "satellite.example.ca"
+capsule_pre_sat_fqdn: "satellite.demo.net"
 capsule_pre_assert_not_users:
   - "apache"
   - "foreman-proxy"
@@ -12,8 +12,8 @@ capsule_pre_assert_not_users:
   - "redis"
 capsule_pre_assert_selinux: "true"
 capsule_pre_time_servers:
-  - "time.example.ca"
-  - "time2.example.ca"
-  - "time3.example.ca"
+  - "time.demo.net"
+  - "time2.demo.net"
+  - "time3.demo.net"
 
 capsule_pre_firewalld_service: "RH-Satellite-6-capsule"

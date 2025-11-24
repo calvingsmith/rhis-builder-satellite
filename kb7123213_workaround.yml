@@ -3,13 +3,13 @@
 # See: https://access.redhat.com/solutions/7123213
 # Your list of repositories
 - name: "Update repository download policy"
-  hosts: satellite.example.ca
+  hosts: satellite.demo.net
   become: true
   gather_facts: true
   vars:
     satellite_username: "admin"
     satellite_password: "#Legend2013"
-    satellite_url: "https://satellite.example.ca"
+    satellite_url: "https://satellite.demo.net"
     satellite_organization: "Default Organization"
     satellite_repositories:
       - name: "Red Hat Ansible Automation Platform 2.4 for RHEL 9 x86_64 Files"

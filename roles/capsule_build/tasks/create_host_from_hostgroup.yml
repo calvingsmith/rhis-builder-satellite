@@ -10,7 +10,7 @@
 # e.g. for VMware, Azure, etc..
 #
 # buildconfig:
-#   fqdn: "testjboss2.example.ca"
+#   fqdn: "testjboss2.demo.net"
 #   organization: "example"
 #   hostgroup: "baseRHEL8/JBossSOE"
 #   kickstart_repository: "Red Hat Enterprise Linux 8 for x86_64 - BaseOS Kickstart 8.8"
@@ -25,7 +25,7 @@
 # e.g. for baremetal
 #
 # buildconfig:
-#   fqdn: "testjboss2.example.ca"
+#   fqdn: "testjboss2.demo.net"
 #   organization: "example"
 #   hostgroup: "baseRHEL8/JBossSOE"
 #   kickstart_repository: "Red Hat Enterprise Linux 8 for x86_64 - BaseOS Kickstart 8.8"
