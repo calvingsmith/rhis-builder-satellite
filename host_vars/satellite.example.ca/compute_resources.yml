@@ -37,7 +37,7 @@ compute_resources:
     provider_params:
       caching_enabled: false  # setting this to true currently causes some server faults.
       datacenter: "demo.net"
-      url: "192.168.140.30"
+      url: "192.168.25.30"
       user: "{{ vcenter_service_username }}"
       password: "{{ vcenter_service_password }}"
 

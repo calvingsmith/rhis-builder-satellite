@@ -3,15 +3,15 @@ satellite_subnets:
   - name: "demo.net"
     description: "demo.net network"
     network_type: "IPv4"
-    network: 192.168.140.0
+    network: 192.168.25.0
     prefix: 22
     mask: 255.255.252.0
-    gateway: 192.168.140.1
-    dns_primary: 192.168.140.5
+    gateway: 192.168.25.1
+    dns_primary: 192.168.25.5
     dns_secondary: 192.168.252.6
     ipam: "Internal DB"
-    from_ip: 192.168.140.100
-    to_ip: 192.168.140.199
+    from_ip: 192.168.25.100
+    to_ip: 192.168.25.199
     boot_mode: "Static"
     discovery_capsule: "{{ satellite_fqdn }}"
     tftp_capsule: "{{ satellite_fqdn }}"
@@ -36,9 +36,9 @@ satellite_subnets:
     network: 192.168.142.0
     prefix: 22
     mask: 255.255.252.0
-    gateway: 192.168.140.1
-    dns_primary: 192.168.140.5
-    dns_secondary: 192.168.140.6
+    gateway: 192.168.25.1
+    dns_primary: 192.168.25.5
+    dns_secondary: 192.168.25.6
     ipam: "None"
     boot_mode: "Static"
     dns_capsule: "{{ satellite_fqdn }}"
